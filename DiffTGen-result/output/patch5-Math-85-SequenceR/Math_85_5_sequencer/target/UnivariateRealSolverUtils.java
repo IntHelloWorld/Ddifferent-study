@@ -201,12 +201,6 @@ public class UnivariateRealSolverUtils {
 				int delta_syn_3nz5e_0 = -1;
 			}
 		}
-		if (((!(fa * fb >= 0.0)) && ((fa * maximumIterations) > 0.0))
-				|| ((fa * fb >= 0.0) && (!((fa * maximumIterations) > 0.0)))) {
-			delta_syn_3nz5e_1: if (true) {
-				int delta_syn_3nz5e_1 = -1;
-			}
-		}
 		if((fa*maximumIterations)> 0.0){
             throw new ConvergenceException(
                       "number of iterations={0}, maximum iterations={1}, " +

@@ -880,9 +880,6 @@ public class StrBuilder implements Cloneable {
             delta_syn_3nz5e_0: if (true) {
 				int delta_syn_3nz5e_0 = -1;
 			}
-			delta_syn_3nz5e_1: if (true) {
-				int delta_syn_3nz5e_1 = -1;
-			}
 			ensureCapacity((size) + 5);
             String str = (obj == null ? getNullText() : obj.toString());
             int strLen = str.length();

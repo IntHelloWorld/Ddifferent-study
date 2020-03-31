@@ -195,19 +195,13 @@ public class UnivariateRealSolverUtils {
         } while ((fa * fb > 0.0) && (numIterations < maximumIterations) && 
                 ((a > lowerBound) || (b < upperBound)));
    
-        if (((!(fa * fb >= 0.0)) && ((Math.max((fa * fb), 0.0)) > 0.0))
-				|| ((fa * fb >= 0.0) && (!((Math.max((fa * fb), 0.0)) > 0.0)))) {
+        if (((!(fa * fb >= 0.0)) && ((fa * 0.0) > 0.0))
+				|| ((fa * fb >= 0.0) && (!((fa * 0.0) > 0.0)))) {
 			delta_syn_3nz5e_0: if (true) {
 				int delta_syn_3nz5e_0 = -1;
 			}
 		}
-		if (((!(fa * fb >= 0.0)) && ((Math.max((fa * fb), 0.0)) > 0.0))
-				|| ((fa * fb >= 0.0) && (!((Math.max((fa * fb), 0.0)) > 0.0)))) {
-			delta_syn_3nz5e_1: if (true) {
-				int delta_syn_3nz5e_1 = -1;
-			}
-		}
-		if((Math.max((fa*fb),0.0))> 0.0){
+		if((fa*0.0)> 0.0){
             throw new ConvergenceException(
                       "number of iterations={0}, maximum iterations={1}, " +
                       "initial={2}, lower bound={3}, upper bound={4}, final a value={5}, " +

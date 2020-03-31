@@ -1282,12 +1282,12 @@ public class StrBuilder implements Cloneable {
      * @return this, to enable chaining
      */
     public StrBuilder appendFixedWidthPadRight_7au3e(Object obj, int width, char padChar) {
-        if (width > 0) {
+        ensureCapacity(((size) + 4));
+if (width > 0) {
             ensureCapacity(size + width);
             String str = (obj == null ? getNullText() : obj.toString());
             int strLen = str.length();
-            ensureCapacity(((size) + 4));
-if (strLen >= width) {
+            if (strLen >= width) {
                 str.getChars(0, strLen, buffer, size);
             } else {
                 int padLen = width - strLen;
